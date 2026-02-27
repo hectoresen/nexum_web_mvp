@@ -9,11 +9,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Nexum - Free open-source alternative to Discord and TeamSpeak. Self-hosted voice and text chat with no accounts, no cloud dependency, and complete privacy. Built with Rust for lightweight performance.">
+  <meta name="keywords" content="discord alternative, teamspeak alternative, self-hosted chat, voice chat, open source discord, private chat server, no account chat, lightweight discord, rust chat app, self-hosted voice server, mumble alternative, open source voice chat, privacy chat, discord replacement">
+  <meta name="author" content="Nexum">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nexum-web.vercel.app/">
+  <meta property="og:title" content="Nexum - Self-Hosted Alternative to Discord & TeamSpeak">
+  <meta property="og:description" content="Free open-source voice and text chat. Self-hosted, no accounts required, no telemetry. Your data, your rules.">
+  <meta property="og:image" content="./assets/img/nexumlogolightmode.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://nexum-web.vercel.app/">
+  <meta property="twitter:title" content="Nexum - Self-Hosted Alternative to Discord & TeamSpeak">
+  <meta property="twitter:description" content="Free open-source voice and text chat. Self-hosted, no accounts required, no telemetry.">
+  <meta property="twitter:image" content="./assets/img/nexumlogolightmode.png">
+  
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-  <title>
-    Nexum - Self-Hosted Voice & Chat Communication
-  </title>
+  <title>Nexum - Free Open Source Alternative to Discord & TeamSpeak | Self-Hosted Voice Chat</title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,6 +42,39 @@
   <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="./assets/css/argon-design-system.css?v=1.2.2" rel="stylesheet" />
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Nexum",
+    "applicationCategory": "CommunicationApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "operatingSystem": ["Windows", "macOS", "Linux"],
+    "description": "Free open-source alternative to Discord and TeamSpeak. Self-hosted voice and text chat with no accounts, no cloud dependency, and complete privacy.",
+    "url": "https://nexum-web.vercel.app",
+    "screenshot": "./assets/img/nexumlogolightmode.png",
+    "author": {
+      "@type": "Person",
+      "name": "Hector Esen",
+      "url": "https://github.com/hectoresen"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "1"
+    },
+    "keywords": "discord alternative, teamspeak alternative, self-hosted chat, voice chat, open source, privacy",
+    "softwareRequirements": "Windows 10+, macOS 10.15+, or Linux",
+    "softwareVersion": "1.0",
+    "license": "https://opensource.org/licenses/MIT"
+  }
+  </script>
 </head>
 
 <body class="index-page">
@@ -106,8 +155,12 @@
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-8 text-center">
                 <h1 class="display-1 text-white font-weight-bold">Nexum</h1>
-                <p class="lead text-white mt-4">A minimal, self-hosted voice and chat communication system</p>
-                <p class="text-white">Lightweight alternative to Discord and TeamSpeak. Your data, your rules. No accounts required.</p>
+                <p class="lead text-white mt-4">Private voice & chat. Self-hosted. Zero accounts.</p>
+                <p class="text-white">
+                  A modern, lightweight communication server you control entirely.
+                  No emails. No tracking. No central infrastructure.
+                  Deploy in minutes and own your conversations.
+                </p>
                 <div class="btn-wrapper mt-5">
                   <a href="https://github.com/hectoresen/nexum_mvp/releases/tag/v0.1.2" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0" target="_blank">
                     <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
@@ -138,7 +191,7 @@
         <div class="row justify-content-center text-center mb-5">
           <div class="col-lg-8">
             <h2 class="display-3">Why Nexum?</h2>
-            <p class="lead text-muted">A lightweight, elegant alternative to Discord, TeamSpeak, and Mumble</p>
+            <p class="lead text-muted">Because your communication shouldn’t depend on corporations.</p>
           </div>
         </div>
         <div class="row row-grid">
@@ -149,7 +202,7 @@
                   <i class="ni ni-lock-circle-open"></i>
                 </div>
                 <h6 class="text-primary text-uppercase">Self-Hosted</h6>
-                <p class="description mt-3">Run your own server locally or remotely. Your data, your rules. No central infrastructure required.</p>
+                <p class="description mt-3">Run your own voice server anywhere — LAN, VPS, or home lab. No external infrastructure. You own the entire stack..</p>
               </div>
             </div>
           </div>
@@ -160,7 +213,7 @@
                   <i class="ni ni-satisfied"></i>
                 </div>
                 <h6 class="text-success text-uppercase">No Accounts</h6>
-                <p class="description mt-3">Just enter a username and connect. No email, no password, no registration hassle.</p>
+                <p class="description mt-3">No emails. No passwords. No registration. Choose a nickname and join instantly.</p>
               </div>
             </div>
           </div>
@@ -171,7 +224,7 @@
                   <i class="ni ni-spaceship"></i>
                 </div>
                 <h6 class="text-warning text-uppercase">Lightweight</h6>
-                <p class="description mt-3">Built with Rust and Tauri. Efficient resource usage and modern desktop UI.</p>
+                <p class="description mt-3">Rust-powered backend with minimal resource usage. Fast startup. Low memory footprint. Modern native UI..</p>
               </div>
             </div>
           </div>
@@ -184,7 +237,7 @@
                   <i class="ni ni-chat-round"></i>
                 </div>
                 <h6 class="text-info text-uppercase">Text Chat</h6>
-                <p class="description mt-3">Real-time messaging with SQLite persistence. Create channels and chat instantly.</p>
+                <p class="description mt-3">Instant messaging with persistent history. Simple channels. Clean conversation flow</p>
               </div>
             </div>
           </div>
@@ -195,7 +248,7 @@
                   <i class="ni ni-sound-wave"></i>
                 </div>
                 <h6 class="text-danger text-uppercase">Voice Chat</h6>
-                <p class="description mt-3">Low-latency voice communication with UDP. Perfect for gaming and team calls.</p>
+                <p class="description mt-3">Direct UDP-based voice communication. Optimized for gaming, team calls and private sessions.</p>
               </div>
             </div>
           </div>
@@ -206,7 +259,7 @@
                   <i class="ni ni-settings-gear-65"></i>
                 </div>
                 <h6 class="text-default text-uppercase">Easy Management</h6>
-                <p class="description mt-3">Manage server from client UI. Create channels, configure settings, all in one place.</p>
+                <p class="description mt-3">Create channels, configure settings and manage your server directly from the desktop client — no CLI required.</p>
               </div>
             </div>
           </div>
@@ -235,7 +288,8 @@
                 <span class="btn-inner--text">Linux</span>
               </a>
             </div>
-            <p class="text-muted mt-5"><small>Coming Soon: Unified installer with server included</small></p>
+            <p class="text-white font-weight-bold mt-5">No cloud dependency. No telemetry. Fully open source.</p>
+            <p class="text-muted mt-3"><small>Coming Soon: Unified installer with server included</small></p>
           </div>
         </div>
       </div>
@@ -250,7 +304,8 @@
       <div class="row align-items-center justify-content-md-between">
         <div class="col-md-6">
           <div class="copyright">
-            &copy; 2026 Nexum - Self-Hosted Communication
+            &copy; 2026 Nexum - Self-Hosted Communication<br>
+            <small class="text-muted">Design by <a href="https://github.com/creativetimofficial/argon-design-system" target="_blank" class="text-muted">Argon Design System</a></small>
           </div>
         </div>
         <div class="col-md-6">
